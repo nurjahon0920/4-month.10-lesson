@@ -56,11 +56,48 @@ for (let i = 0; i < books.length; i++) {
 }
 */
 ////////_Object-3_//////////
-
+/*
+let obj = { 1: 20, 2: 30, 3: 20, 4: 40, 5: 30, 6: 50, 7: 40, 8: 20 };
+let result = {};
+for (let key in obj) {
+  let value = obj[key];
+  if (result[value] === undefined) {
+    result[value] = [Number(key)];
+  } else {
+    result[value].push(Number(key));
+  }
+}
+console.log(result);
+*/
 ////////_Object-4_//////////
+/*
+let obj1 = { a: "aa", d: "dd" };
+let obj2 = { b: "bb", c: "cc" };
+let result = {};
+for (let key in obj1) {
+  if (!obj2[key]) result[key] = obj1[key];
+}
+for (let key in obj2) {
+  if (!obj1[key]) result[key] = obj2[key];
+}
+*/
 ////////_Object-5_//////////
 ////////_Object-6_//////////
 ////////_Object-7_//////////
+/*
+let obj = {
+  it: 20,
+  mushuk: 10,
+  sigir: 200,
+  tovuq: 2,
+};
+let arr = [];
+for (let key in obj) {
+  arr.push(key);
+  arr.push(obj[key]);
+}
+console.log(arr);
+*/
 ////////_Object-8_//////////
 ////////_Object-9_//////////
 /*
@@ -119,7 +156,8 @@ let result = multiplyValues(obj, n);
 console.log(result);
 */
 ////////_Object-11_/////////
-let product = { 
+/*
+let product = {
   Name: "Iphone 14",
   company: {
     name: "Apple",
@@ -136,7 +174,37 @@ let product = {
 console.log(Name);
 console.log(price);
 console.log(name);
+*/
 ////////_Object-12_/////////
 ////////_Object-13_/////////
+/*
+function baxolar() {
+  let baxo = parseFloat(prompt("balni kiriting:"));
+  if (!isNaN(baxo)) {
+    if (baxo >= 90 && baxo <= 100) {
+      console.log("5 baxo olibsiz");
+    } else if (baxo >= 80 && baxo < 90) {
+      console.log("4 baxo olibsiz");
+    } else if (baxo >= 70 && baxo < 80) {
+      console.log("3 baxo olibsiz");
+    } else {
+      console.log("2 baxo olibsiz");
+    }
+  } else {
+    console.log("");
+  }
+}
+
+baxolar();
+*/
 ////////_Object-14_/////////
+/*
+let isPassed = 70;
+let score = +prompt("");
+if (score >= isPassed) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+*/
 ////////_Object-15_/////////
