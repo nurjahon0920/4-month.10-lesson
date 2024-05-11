@@ -119,7 +119,7 @@ let result = multiplyValues(obj, n);
 console.log(result);
 */
 ////////_Object-11_/////////
-let product = {
+let product = { 
   Name: "Iphone 14",
   company: {
     name: "Apple",
@@ -130,11 +130,9 @@ let product = {
       birthDate: 1950,
     },
   },
+  let { Name } = product;
+  let { name, price } = company;
 };
-
-let { Name } = product;
-let { name, price } = company;
-
 console.log(Name);
 console.log(price);
 console.log(name);
