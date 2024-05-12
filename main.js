@@ -82,6 +82,21 @@ for (let key in obj2) {
 }
 */
 ////////_Object-5_//////////
+/*
+let products = [
+  { name: "Product 1", price: 20000, discount: 10, quantity: 5 },
+  { name: "Product 2", price: 10000, discount: 20, quantity: 4 },
+  { name: "Product 3", price: 15000, discount: 8, quantity: 10 },
+  { name: "Product 4", price: 18000, discount: 5, quantity: 6 },
+  { name: "Product 5", price: 5000, discount: 10, quantity: 16 },
+];
+let sum = 0;
+for (let i = 0; i < products.length; i++) {
+  let javob = products[i].price * (1 - products[i].discount / 100);
+  sum += javob * products[i].quantity;
+}
+console.log(sum);
+*/
 ////////_Object-6_//////////
 ////////_Object-7_//////////
 /*
@@ -208,3 +223,41 @@ if (score >= isPassed) {
 }
 */
 ////////_Object-15_/////////
+let isPassed = 70;
+let yes = 0;
+let no = 0;
+let pupils = [
+  {
+    name: "Elbek",
+    protcent: 95,
+  },
+  {
+    name: "Zafar",
+    protcent: 78,
+  },
+  {
+    name: "Aziz",
+    protcent: 83,
+  },
+  {
+    name: "Jasur",
+    protcent: 88,
+  },
+  {
+    name: "Bobur",
+    protcent: 66,
+  },
+  {
+    name: "Kamron",
+    protcent: 75,
+  },
+];
+for (let i = 0; i < pupils.length; i++) {
+  if (pupils[i].protcent >= isPassed) {
+    yes++;
+  } else {
+    no++;
+  }
+}
+console.log(`O'ta olganlar soni ${yes}ta`);
+console.log(`O'ta olmaganlar soni ${no}ta`);
